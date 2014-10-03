@@ -281,10 +281,10 @@ plangular.filter('prettyTime', function() {
 
 plangular.provider('plangularConfig', function() {
   this.clientId = '0d33361983f16d2527b01fbf6408b7d7';
-  var _this = this;
+  var self = this;
   this.$get = function() {
     return {
-      clientId: _this.clientId
+      clientId: self.clientId
     };
   };
 });
